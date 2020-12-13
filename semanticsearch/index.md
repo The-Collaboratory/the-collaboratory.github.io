@@ -68,7 +68,7 @@ In practice, we can build a single hidden layer neural network that accepts a 10
 
 By training this network on millions of examples of nearby words sourced from text, the word2vec authors found that the intermediate, hidden representation in the network is forced to encode general semantic information about concepts learned from text. In other words, the network learns to encode what humans would call the "meaning" of the input.
 
-In one remarkable result, the word2vec authors showed showed that the hidden representation of "king", minus the hidden representation of "man", plus the hidden representation of "woman" equaled... the hidden representation of "queen"! The network wasn't taught this relationship explicitly, instead it learned to embed these words into a *semantic space*, where related concepts were mapped near to each other as a side effect of the training procedure!
+In one remarkable result, the word2vec authors showed that the hidden representation of "king", minus the hidden representation of "man", plus the hidden representation of "woman" equaled... the hidden representation of "queen"! The network wasn't taught this relationship explicitly, instead it learned to embed these words into a *semantic space*, where related concepts were mapped near to each other as a side effect of the training procedure!
 
 ![](glove_embedding.jpg)
 *An example semantic embedding of concepts into vector space, showing only two dimensions[^glove]. The x-dimension seems to encode a notion of formality, while the y-dimension seems to encode a notion of gender.*
@@ -99,3 +99,14 @@ At The Collaboratory, we want to make searching through scientific literature, a
 [^tldr]: [TLDR: Extreme Summarization of Scientific Documents](https://arxiv.org/abs/2004.15011)
 [^specter]: [SPECTER: Document-level Representation Learning using Citation-informed Transformers](https://arxiv.org/abs/2004.07180)
 [^googlebert]: [Understanding searches better than ever before](https://blog.google/products/search/search-language-understanding-bert/)
+
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-48874513-2', 'auto');
+       ga('send', 'pageview');
+
+</script>
