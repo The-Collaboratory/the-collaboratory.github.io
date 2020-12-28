@@ -38,3 +38,18 @@ git add README.md
 git commit -m "first commit for zenodo repo"
 git push
 ```
+
+# Repositories to attack!
+
+[Data Dryad](https://datadryad.org/stash)
+[NIST](https://data.nist.gov/sdp/#/)
+[IUCR](https://www.iucr.org/resources/data/databases)
+[ICDD](https://www.icdd.com/)
+[Other Crystallographic](https://en.wikipedia.org/wiki/Crystallographic_database#External_links)
+[NIST Standard Reference](https://www.nist.gov/srd/nist-standard-reference-database-3)
+[Materials Genome Initiative](https://www.mgi.gov/)
+[Materials Project](https://www.materialsproject.org/)
+[NIST Chemistry](https://webbook.nist.gov/chemistry/)
+[Other Chemistry](https://en.wikipedia.org/wiki/List_of_chemical_databases)
+[Atmospheric Radiation Measurement Climate Data](https://adc.arm.gov/armlogin/login.jsp)
+[MDMC](https://www.grantadesign.com/industry/collaborations/consortia/mdmc/)
