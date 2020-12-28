@@ -1,7 +1,7 @@
 ![](../semanticsearch/logo.svg)
 
 # Scraping Documentation
-[Back to main page](index.html)
+[Back to main page](README.md)
 
 ## Backend
 After you've scraped the metadata from a repository, you need to upload the results to The Collaboratory's backend to automatically get it added to our database to search through.

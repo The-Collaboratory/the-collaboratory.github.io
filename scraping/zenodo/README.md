@@ -1,7 +1,7 @@
 ![](../semanticsearch/logo.svg)
 
 # Scraping Documentation
-[Back to main page](index.html)
+[Back to main page](../README.md)
 
 ## Zenodo
 
