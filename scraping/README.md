@@ -11,7 +11,7 @@
     - Add more repositories here!
 
 ## Using this page
-These pages are made by compiling markdown files ([guide](https://commonmark.org/help/), [origin](https://daringfireball.net/projects/markdown/)) into html using [pandoc](https://pandoc.org/), a really lovely universal document converter.
+These pages are made using markdown files ([guide](https://commonmark.org/help/), [origin](https://daringfireball.net/projects/markdown/)) compiled by GitHub for README's
 
 Pre-reqs:
 
