@@ -15,27 +15,29 @@ Backend spec:
 | title      | The title of the dataset          | YES | String |
 | abstract   | The description of the dataset           | YES | String|
 | link | A working link to the dataset | YES | String |
-| doc_type | DATASET | YES | String |
+| doc_type | "DATASET" or "PAPER" | YES | String |
 | publication_date | YYYY-MM-DD formatted date | NO | String |
 | doi | The [DOI](https://www.doi.org/) string | NO | String |
-| publisher | The dataset publisher, e.g. zenodo | NO | String |
-| authors | See below | NO | Array of dicts/json |
+| externalCode      | Unique identifier for this document in the context of it's publisher    | YES | String |
+| publisher | The dataset publisher, e.g. "Zenodo" | YES | String |
+| unstructuredAuthors | Used when the author information cannot be parsed into structured data | NO | String |
+| structuredAuthors | See below | NO | Array of dicts/json |
 | files | List of filenames | NO | List of strings |
 | meta_data | Extra information. Unspecified. | NO | String |
 
-"authors" key should look like this:
+"structuredAuthors" key should look like this:
 
 ```json
-"authors" : [
+"structuredAuthors" : [
 	{
 		"name": "Author 1 Name",
 		"affiliation" : "University of Author 1",
-		"orcid" : "orcid id"
+		"orcid" : "0000-0002-1825-0097"
 	},
 	{
 		"name":	"Author	2 Name",
                 "affiliation" :	"University of Author 2",
-                "orcid"	: "orcid id"
+                "orcid"	: "0000-0002-1825-0097"
 	},
 	...
 ]
@@ -49,4 +51,13 @@ The backend should give you a response status code:
 | 200 | OK |
 | 504? | NOT OK |
 
-Ask Rafa to fill in these details
+Body:
+
+```json
+[
+	{
+		"https://doi.org/10.5281/zenodo.4091366":"SUCESS",
+		"https://doi.org/10.5281/zenodo.4090873":"FAILURE"
+	}
+]
+```
