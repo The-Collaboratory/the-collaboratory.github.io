@@ -54,10 +54,8 @@ The backend should give you a response status code:
 Body:
 
 ```json
-[
-	{
-		"https://doi.org/10.5281/zenodo.4091366":"SUCESS",
-		"https://doi.org/10.5281/zenodo.4090873":"FAILURE"
-	}
-]
+{
+	"https://doi.org/10.5281/zenodo.4091366":"SUCCESS",
+	"https://doi.org/10.5281/zenodo.4090873":"ERROR"
+}
 ```
