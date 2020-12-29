@@ -21,8 +21,8 @@ Backend spec:
 | externalCode      | Unique identifier for this document in the context of it's publisher    | YES | String |
 | publisher | The dataset publisher, e.g. "Zenodo" | YES | String |
 | unstructuredAuthors | Used when the author information cannot be parsed into structured data | NO | String |
-| structuredAuthors | See below | NO | Array of dicts/json |
-| files | List of filenames | NO | List of strings |
+| structuredAuthors | See below | NO | List of objects |
+| files | See below | NO | List of objects |
 | meta_data | Extra information. Unspecified. | NO | String |
 
 "structuredAuthors" key should look like this:
@@ -42,6 +42,26 @@ Backend spec:
 	...
 ]
 ```
+
+"files" key should look like this:
+
+```json
+"files" : [
+	{
+		"filename": "Argentina_Camarones.xlsx",
+		"approximateSize" : 34714,
+		"hash" : "md5:f866647b057c684898fa612904f3f200"
+	},
+	{
+		"filename":	"Argentina_Camarones_v1.1.xlsx",
+                "approximateSize" : 35635,
+                "orcid"	: "md5:31f9133078546e9ad3826edea0cf6ab1"
+	},
+	...
+]
+```
+Only the "filename" is required.
+
 
 ## Response
 The backend should give you a response status code:
