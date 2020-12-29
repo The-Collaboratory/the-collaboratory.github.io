@@ -42,6 +42,8 @@ Backend spec:
 	...
 ]
 ```
+Only "name" is required.
+
 
 "files" key should look like this:
 
