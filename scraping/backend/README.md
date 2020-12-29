@@ -18,10 +18,10 @@ Backend spec:
 | doc_type | "DATASET" or "PAPER" | YES | String |
 | publication_date | YYYY-MM-DD formatted date | NO | String |
 | doi | The [DOI](https://www.doi.org/) string | NO | String |
-| externalCode      | Unique identifier for this document in the context of it's publisher    | NO | String |
+| external_code      | Unique identifier for this document in the context of it's publisher    | NO | String |
 | publisher | The dataset publisher, e.g. "Zenodo" | YES | String |
-| unstructuredAuthors | Used when the author information cannot be parsed into structured data | NO | String |
-| structuredAuthors | See below | NO | List of objects |
+| unstructured_authors | Used when the author information cannot be parsed into structured data | NO | String |
+| structured_authors | See below | NO | List of objects |
 | files | See below | NO | List of objects |
 | meta_data | Extra information. Unspecified. | NO | String |
 
