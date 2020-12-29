@@ -49,7 +49,8 @@ The backend should give you a response status code:
 | code | meaning |
 | --- | --- |
 | 200 | OK |
-| 504? | NOT OK |
+
+TODO: improve HTTP codes for failure responses.
 
 Body:
 
