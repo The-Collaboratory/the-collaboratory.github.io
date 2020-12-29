@@ -55,7 +55,7 @@ Backend spec:
 	{
 		"filename":	"Argentina_Camarones_v1.1.xlsx",
                 "approximateSize" : 35635,
-                "orcid"	: "md5:31f9133078546e9ad3826edea0cf6ab1"
+                "hash"	: "md5:31f9133078546e9ad3826edea0cf6ab1"
 	},
 	...
 ]
