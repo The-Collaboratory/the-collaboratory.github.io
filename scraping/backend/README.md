@@ -48,20 +48,11 @@ Only "name" is required.
 "files" key should look like this:
 
 ```json
-"files" : [
+"files" : 
 	{
-		"filename": "Argentina_Camarones.xlsx",
-		"approximateSize" : 34714,
-		"hash" : "md5:f866647b057c684898fa612904f3f200"
-	},
-	{
-		"filename":	"Argentina_Camarones_v1.1.xlsx",
-                "approximateSize" : 35635,
-                "hash"	: "md5:31f9133078546e9ad3826edea0cf6ab1"
-	},
+		"Argentina_Camarones.xlsx", "Argentina_Camarones_v1.1.xlsx"
+	}
 	...
-]
-```
 Only the "filename" is required.
 
 
