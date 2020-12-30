@@ -93,7 +93,31 @@ When the review is complete, upload your results to the backend using the API.
 
 When all this is complete, you can close the issue. The board will automatically update, moving the issue to "Done".
 
+## Reviewing
+
+Checking each other's code thoroughly ensures high quality results, and high quality, robust, reuable scrapers. To review someone's code you should audit the quality of the results and the quality of the underlying code. Reviewing should be an iterative process, of making suggestions, letting them improve the code, and then reviewing again until everything looks awesome.
+
+### Quality of Results
+
+1. Go the website, see what their records look like, note how many you think appear scrapable.
+1. Read all the way thru their README.
+1. Checkout their branch and run the code on your machine.
+1. Randomly check a handful of results in the output JSON against the pages they link to for quality control.
+
+Do you think it's reasonable to get more results, more fields, or higher quality results? If so, tell them that in the discussion section of the pull request. This is okay!!
+
+### Quality of Code
+
+- Avoid hard-coded information that limits scraper flexibility. It should capture new data if it is run again in the future.
+- Avoid failing silently. If you have to skip certain fields or documents because they're formatted badly, maybe log this so we can see how much we're skipping and if it's possible to improve the scraper instead.
+- Standard [pep8](https://www.python.org/dev/peps/pep-0008/) python style? Ideally the code is run thru a linter built into most editors so no humans have to think about this too much.
+- Small functions (20-30 lines max)
+
+If there are issues with style, readability, or robustness of approach, tell them in the dicssuion section of the pull request.
+
 # Repositories to attack!
+
+(To choose a repository to work on, go to the [project page](https://github.com/The-Collaboratory/the-collaboratory.github.io/projects/1).)
 
 - [Data Dryad](https://datadryad.org/stash)
 - [NIST](https://data.nist.gov/sdp/#/)
