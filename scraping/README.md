@@ -85,7 +85,7 @@ touch README.md
 
 Your README should include:
 
-- A high-level description of your approach
+- A high-level description of your approach, and potentially alternative approaches that you tried.
 - Documentation of assumptions your code makes (Eg, "if more than 10,000 records were published on one day the scraper would only get the first 10,000.")
 - Evaluation of the success. (How many records & how many fields were you able to scrape out of presumed total possible).
 
@@ -109,8 +109,8 @@ Checking each other's code thoroughly ensures high quality results, and high qua
 
 1. Go the website, see what their records look like, note how many you think appear scrapable.
 1. Read all the way thru their README.
-1. Checkout their branch and run the code on your machine.
-1. Randomly check a handful of results in the output JSON against the pages they link to for quality control.
+1. Git checkout their branch and run the code on your machine.
+1. Randomly spot check a handful of results in the output JSON against the pages they link to for quality control.
 
 Do you think it's reasonable to get more results, more fields, or higher quality results? If so, tell them that in the discussion section of the pull request. This is okay!!
 
