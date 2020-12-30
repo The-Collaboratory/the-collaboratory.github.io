@@ -2,11 +2,18 @@
 
 # Scraping Documentation
 
-- [How to use this page](#using-this-page)
+- [Getting Started](#getting-started)
+- [Workflow](#workflow)
+- [Reviewing](#reviewing)
+
+See also:
+
 - [Collaboratory Backend API](backend/README.md)
 - Repositories
   - [Zenodo](zenodo/README.md)
   - Add more repositories here!
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 ## Getting Started
 
@@ -87,7 +94,7 @@ When you think you're finished, open a pull reqest to merge your branch into mas
 
 ### 7. Upload to backend
 
-When the review is complete, upload your results to the backend using the API.
+When the review is complete, upload your results to the backend using the API. See: [Collaboratory Backend API](backend/README.md)
 
 ### 8. Close the issue
 
