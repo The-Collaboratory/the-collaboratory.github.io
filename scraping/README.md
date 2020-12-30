@@ -8,11 +8,7 @@
   - [Zenodo](zenodo/README.md)
   - Add more repositories here!
 
-## Using this page
-
-These pages are made using markdown files ([guide](https://commonmark.org/help/), [origin](https://daringfireball.net/projects/markdown/)) compiled by GitHub for README's
-
-Pre-reqs:
+## Getting Started
 
 Download this repo from our GitHub.
 
@@ -27,19 +23,75 @@ You'll be working in the scraping directory:
 cd the-collaboratory.github.io/scraping
 ```
 
-To make a new page, create a new repository directory.
+## Workflow
+
+### 1. Pick an Issue
+
+Websites to scrape will be added as GitHub Issues, and show up automatically on the scraping [project page](https://github.com/The-Collaboratory/the-collaboratory.github.io/projects/1).
+
+Go to that page, pick a task in the "To Do" column. Assign it to yourself and move it to "In Progress".
+
+### 2. Make a branch
+
+Before you start coding, create a new branch. Eg,
 
 ```sh
-# For example, to make a new Zenodo documentation page
+git checkout -b issue-1-scrape-zenodo
+```
+
+### 3. Make a new directory
+
+In your branch, make a new directory within the scraping folder. Eg,
+
+```sh
 mkdir zenodo
 cd zenodo
-# Start editing!
-emacs README.md
-# Push results!
+```
+
+### 4. Scrape away!
+
+Figure out how to scrape the desired data as robusty and completely as possible.
+
+Don't include your `output.json` file for now.
+
+Commit your changes to git and push to the remote repository as you go.
+
+```sh
+touch README.md
 git add README.md
-git commit -m "first commit for zenodo repo"
+git commit -m "add readme to zenodo directory"
 git push
 ```
+
+The first time you push to a new branch:
+
+    git push --set-upstream origin test
+
+### 5. Document your solution
+
+Create a README in your folder and document your solution using markdown syntax. See: ([guide](https://commonmark.org/help/), [origin](https://daringfireball.net/projects/markdown/)).
+
+```sh
+touch README.md
+```
+
+Your README should include:
+
+- A high-level description of your approach
+- Documentation of assumptions your code makes (Eg, "if more than 10,000 records were published on one day the scraper would only get the first 10,000.")
+- Evaluation of the success. (How many records & how many fields were you able to scrape out of presumed total possible).
+
+### 6. Create a pull request
+
+When you think you're finished, open a pull reqest to merge your branch into master. You can do this from the GitHub website. Update the project board. Ask somebody on the scraping team to review your code (notes on this below).
+
+### 7. Upload to backend
+
+When the review is complete, upload your results to the backend using the API.
+
+### 8. Close the issue
+
+When all this is complete, you can close the issue. The board will automatically update, moving the issue to "Done".
 
 # Repositories to attack!
 
