@@ -6,9 +6,10 @@
 - [Workflow](#workflow)
 - [Reviewing](#reviewing)
 
-See also:
+_See also:_
 
 - [Collaboratory Backend API](backend/README.md)
+- [Scraping Snippets](https://github.com/The-Collaboratory/the-collaboratory.github.io/wiki/Scraping-Snippets)
 - Repositories
   - [Zenodo](zenodo/README.md)
   - Add more repositories here!
